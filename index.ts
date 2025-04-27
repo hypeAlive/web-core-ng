@@ -1,1 +1,1 @@
-export {ModalContainerComponent} from "./components/modal/modal-container.component"
+export * from "./components/modal/modal-container.component"
