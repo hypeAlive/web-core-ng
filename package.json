@@ -9,7 +9,11 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "daisyui": "^5.0.28",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
   },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
