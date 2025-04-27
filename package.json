@@ -2,13 +2,11 @@
   "name": "web-core-ng",
   "version": "0.1.0",
   "type": "module",
+  "module": "index.ts",
   "main": "index.ts",
-  "types": "index.ts",
-  "exports": {
-    ".": {
-      "types": "./index.ts",
-      "default": "./index.ts"
-    }
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -16,5 +14,10 @@
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
+  },
+  "devDependencies": {
+    "rollup": "^4.40.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "typescript": "^5.8.3"
   }
 }

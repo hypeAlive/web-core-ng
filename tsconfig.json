@@ -4,6 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
+    "emitDeclarationOnly": true,
     "sourceMap": true,
     "inlineSources": true,
     "emitDecoratorMetadata": true,
@@ -11,8 +12,10 @@
     "importHelpers": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
     "paths": {
-      "web-core-ng": ["./index.ts"]
+      "web-core-ng": ["."],
+      "web-core-ng/*": ["./*"]
     }
   },
   "include": ["**/*.ts"],
