@@ -6,7 +6,7 @@
   "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rimraf index.d.ts && rollup -c"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -16,12 +16,18 @@
     "@angular/core": "^19.2.0"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rimraf": "^6.0.1",
     "rollup": "^4.40.0",
     "rollup-plugin-dts": "^6.2.1",
     "typescript": "^5.8.3"
   },
   "files": [
-    "components",
+    "component",
+    "model",
+    "service",
+    "tokens.ts",
+    "providers.ts",
     "index.ts",
     "index.d.ts",
     "package.json",

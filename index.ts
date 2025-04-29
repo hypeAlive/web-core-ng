@@ -1,1 +1,2 @@
-export {ModalContainerComponent} from "./components/modal/modal-container.component"
+export {ModalContainerComponent} from './component/modal/modal-container.component';
+export {provideWebCore} from './providers';
