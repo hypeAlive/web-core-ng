@@ -14,8 +14,16 @@ declare class ModalContainerComponent implements AfterViewInit {
 
 interface WebCoreConfig {
     headerComponent?: string;
+    useHttpLogger?: boolean;
+    useEnsureHttp?: boolean;
+    ensureHttpConfig?: EnsureHttpConfig;
+}
+interface EnsureHttpConfig {
+    apiUrl?: string;
+    retryCount?: number;
 }
 
 declare function provideWebCore(config: WebCoreConfig): _angular_core.EnvironmentProviders;
+declare function provideDefaultWebCore(): _angular_core.EnvironmentProviders;
 
-export { ModalContainerComponent, provideWebCore };
+export { ModalContainerComponent, provideDefaultWebCore, provideWebCore };

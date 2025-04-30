@@ -12,6 +12,7 @@
     "tslib": "^2.3.0"
   },
   "peerDependencies": {
+    "ngx-logger": "^5.0.12",
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
   },
